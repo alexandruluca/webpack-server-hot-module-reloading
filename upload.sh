@@ -1,1 +1,0 @@
-curl -F ‘data=@/Users/lucaalexandru/workspace/terria/hot-reload-all-the-things/images/1pximage.png http://localhost:3000/upload
