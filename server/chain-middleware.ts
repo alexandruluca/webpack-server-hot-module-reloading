@@ -12,7 +12,7 @@ export function chainMiddleware(series) {
 				} else if (!chainError && isErrMiddleware) {
 					return next();
 				}
-				
+
 				let args = [req, res, next];
 
 				if (chainError) {
@@ -25,7 +25,7 @@ export function chainMiddleware(series) {
 					reject(err);
 				}
 			}, (err) => {
-				if(err) {
+				if (err) {
 					res.end(JSON.stringify({success: false, message: err.message}));
 					resolve();
 				} else {

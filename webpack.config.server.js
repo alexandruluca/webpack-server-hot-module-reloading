@@ -22,14 +22,14 @@ const plugins = [
 	})
 ];
 
-if(isWatch) {
+if (isWatch) {
 	plugins.push(new StartServerPlugin("index.js"));
 }
 
 module.exports = {
 	entry: [
 		"webpack/hot/poll?1000",
-		"./server/index.ts",
+		"./server/index.ts"
 	].concat(files),
 	mode: "development",
 	devtool: 'source-map',
@@ -43,8 +43,8 @@ module.exports = {
 				loader: 'ts-loader',
 				options: {
 					transpileOnly: true,
-					experimentalWatchApi: true,
-				  }
+					experimentalWatchApi: true
+				}
 			}],
 			exclude: /node_modules/
 		}]

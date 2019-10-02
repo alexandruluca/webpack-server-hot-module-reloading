@@ -14,7 +14,7 @@
 		"removeComments": true,
 		"baseUrl": "src",
 		"paths": {
-			"com/*": [ "com/*" ],
+			"com/*": [ "com/*" ]
 		}
 	},
 	"filesGlob": [

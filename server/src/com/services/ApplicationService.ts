@@ -1,5 +1,2 @@
 export class ApplicationService {
-    constructor() {
-        //
-    }
-}//
+}
